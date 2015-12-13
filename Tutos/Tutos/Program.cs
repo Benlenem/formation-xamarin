@@ -7,7 +7,8 @@ namespace Tutos
 	{
 		public static void Main (string[] args)
 		{
-			AsyncAwait.Start ();
+			//AsyncAwait.Start ();
+			new Properties();
 		}
 	}
 }
