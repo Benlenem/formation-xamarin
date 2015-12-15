@@ -32,10 +32,18 @@ namespace Pages
 
 //			MainPage = new Tabbed ();
 
-			MainPage = new TabbedPage(){
+//			MainPage = new TabbedPage(){
+//				Children = {
+//					new ContentPage { Title="Page1"},
+//					new ContentPage { Title="Page2"},
+//				}
+//			};
+
+			MainPage = new CarouselPage(){
 				Children = {
-					new ContentPage { Title="Page1"},
-					new ContentPage { Title="Page2"},
+					new ContentPage { Title="Page1", Content = new Label { Text="1"}},
+					new ContentPage { Title="Page2", Content = new Label { Text="2"}},
+					new ContentPage { Title="Page2", Content = new Label { Text="3"}}
 				}
 			};
 		}
