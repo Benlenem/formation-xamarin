@@ -15,30 +15,15 @@ namespace Pages
 				HorizontalOptions = LayoutOptions.Center
 			};
 
-			Color[] colors = 
+			string[] menuEntries = 
 			{
-				Color.Aqua,
-				Color.Black,
-				Color.Blue,
-				Color.Fuchsia,
-				Color.Gray,
-				Color.Green,
-				Color.Lime,
-				Color.Maroon,
-				Color.Navy,
-				Color.Olive,
-				Color.Purple,
-				Color.Red,
-				Color.Silver,
-				Color.Teal,
-				Color.White,
-				Color.Yellow
+				"Menu1", "Menu2", "Menu3"
 			};
 
 			// Create ListView for the master page.
 			ListView listView = new ListView
 			{
-				ItemsSource = colors
+				ItemsSource = menuEntries
 			};
 
 			// Create the master page with the ListView.
@@ -59,16 +44,6 @@ namespace Pages
 			// navigation page to provide a NavigationBar and Toggle button
 			this.Detail = new NavigationPage(new ContentPage());
 
-			// For Windows Phone, provide a way to get back to the master page.
-			if (Device.OS == TargetPlatform.WinPhone)
-			{
-				(this.Detail as ContentPage).Content.GestureRecognizers.Add(
-					new TapGestureRecognizer((view) =>
-						{
-							this.IsPresented = true;
-						}));
-			}
-
 			// Define a selected handler for the ListView.
 			listView.ItemSelected += (sender, args) =>
 			{
@@ -80,7 +55,7 @@ namespace Pages
 			};
 
 			// Initialize the ListView selection.
-			listView.SelectedItem = colors[0];
+			listView.SelectedItem = menuEntries[0];
 		}
 	}
 }

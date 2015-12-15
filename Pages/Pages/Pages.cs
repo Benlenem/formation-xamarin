@@ -21,7 +21,9 @@ namespace Pages
 //				}
 //			};
 
-			MainPage = new Content ();
+			//MainPage = new Content ();
+
+			MainPage = new MasterDetail ();
 		}
 
 		protected override void OnStart ()
