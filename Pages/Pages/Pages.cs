@@ -39,13 +39,15 @@ namespace Pages
 //				}
 //			};
 
-			MainPage = new CarouselPage(){
-				Children = {
-					new ContentPage { Title="Page1", Content = new Label { Text="1"}},
-					new ContentPage { Title="Page2", Content = new Label { Text="2"}},
-					new ContentPage { Title="Page2", Content = new Label { Text="3"}}
-				}
-			};
+//			MainPage = new CarouselPage(){
+//				Children = {
+//					new ContentPage { Title="Page1", Content = new Label { Text="1"}},
+//					new ContentPage { Title="Page2", Content = new Label { Text="2"}},
+//					new ContentPage { Title="Page2", Content = new Label { Text="3"}}
+//				}
+//			};
+
+			MainPage = new Layouts ();
 		}
 
 		protected override void OnStart ()

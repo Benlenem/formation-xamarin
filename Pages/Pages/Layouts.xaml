@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="Pages.Layouts">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout
+				Orientation="Vertical">
+				<StackLayout
+					Orientation="Horizontal"
+					BackgroundColor="Red">
+					<Label
+						Text="Hori" />
+					<Label
+						Text="zontal" />
+				</StackLayout>
+				<StackLayout
+					Orientation="Vertical"
+					BackgroundColor="Green">
+					<Label
+						Text="Vert" />
+					<Label
+						Text="ical" />
+				</StackLayout>
+				<RelativeLayout
+					BackgroundColor="Blue"
+					HeightRequest="50">
+					<BoxView
+						HeightRequest="10"
+						WidthRequest="10"
+						BackgroundColor="Fuchsia"
+						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
+						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5}" />
+				</RelativeLayout>
+				<Grid
+					RowSpacing="5"
+					ColumnSpacing="5"
+					BackgroundColor="Olive">
+					<Grid.RowDefinitions>
+						<RowDefinition
+							Height="Auto">
+						</RowDefinition>
+						<RowDefinition
+							Height="*">
+						</RowDefinition>
+						<RowDefinition
+							Height="30">
+						</RowDefinition>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition
+							Width="*" />
+						<ColumnDefinition
+							Width="*" />
+					</Grid.ColumnDefinitions>
+					<Label
+						Text="1"
+						BackgroundColor="Gray"
+						Grid.Row="0"
+						Grid.Column="0" />
+					<Label
+						Text="2"
+						BackgroundColor="Gray"
+						Grid.Row="0"
+						Grid.Column="1" />
+					<Label
+						Text="3"
+						BackgroundColor="Gray"
+						Grid.Row="0"
+						Grid.Column="2" />
+					<Label
+						Text="1"
+						BackgroundColor="Gray"
+						Grid.Row="1"
+						Grid.ColumnSpan="3"
+						HorizontalOptions="Center" />
+				</Grid>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
