@@ -21,9 +21,14 @@ namespace Pages
 //				}
 //			};
 
-			//MainPage = new Content ();
+//			MainPage = new Content ();
 
-			MainPage = new MasterDetail ();
+//			MainPage = new MasterDetail ();
+
+			var navigationpage = new NavigationPage (new Content ());
+			navigationpage.PushAsync (new Content ());
+
+			MainPage = navigationpage;
 		}
 
 		protected override void OnStart ()
