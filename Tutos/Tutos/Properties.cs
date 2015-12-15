@@ -14,6 +14,7 @@ namespace Tutos
 			private string name;  // field
 			public string Name { // read-only property 
 				get{ return name ?? "Inconnu"; }
+				set { name = value; }
 			}
 
 			public Person2(string name = null){
@@ -24,10 +25,10 @@ namespace Tutos
 		public Properties ()
 		{
 			var p = new Person () { Name="Thibaut" };
-			Console.WriteLine (p.Name);
+			Console.WriteLine (p.Name); //Thibaut
 
 			var p2 = new Person2 (null);
-			Console.WriteLine (p2.Name);
+			Console.WriteLine (p2.Name); //Inconnu
 		}
 	}
 }

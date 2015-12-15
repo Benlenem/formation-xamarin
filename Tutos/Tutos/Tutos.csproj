@@ -39,6 +39,7 @@
     <Compile Include="Lambdas.cs" />
     <Compile Include="Linq.cs" />
     <Compile Include="Properties.cs" />
+    <Compile Include="Vars.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

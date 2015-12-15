@@ -7,3 +7,13 @@ Calculator/packages
 Calculator/UITests/obj
 Calculator/UITests/bin
 Calculator/Droid/bin
+Pages/Droid/bin
+Pages/Droid/obj
+Pages/Pages/bin
+Pages/UITests/bin
+Pages/UITests/obj
+Pages/iOS/bin
+Pages/iOS/obj
+Tutos/Tutos/obj
+Tutos/Tutos/bin
+Pages/packages
