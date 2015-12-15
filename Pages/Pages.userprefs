@@ -1,1 +1,1 @@
-﻿<Properties StartupItem="iOS/Pages.iOS.csproj" />
+﻿<Properties StartupItem="Droid/Pages.Droid.csproj" />

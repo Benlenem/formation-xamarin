@@ -25,10 +25,19 @@ namespace Pages
 
 //			MainPage = new MasterDetail ();
 
-			var navigationpage = new NavigationPage (new Content ());
-			navigationpage.PushAsync (new Content ());
+//			var navigationpage = new NavigationPage (new Content ());
+//			navigationpage.PushAsync (new Content ());
+//
+//			MainPage = navigationpage;
 
-			MainPage = navigationpage;
+//			MainPage = new Tabbed ();
+
+			MainPage = new TabbedPage(){
+				Children = {
+					new ContentPage { Title="Page1"},
+					new ContentPage { Title="Page2"},
+				}
+			};
 		}
 
 		protected override void OnStart ()
