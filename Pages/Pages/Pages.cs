@@ -30,7 +30,7 @@ namespace Pages
 //
 //			MainPage = navigationpage;
 
-//			MainPage = new Tabbed ();
+			//MainPage = new Tabbed ();
 
 //			MainPage = new TabbedPage(){
 //				Children = {
@@ -46,8 +46,9 @@ namespace Pages
 //					new ContentPage { Title="Page2", Content = new Label { Text="3"}}
 //				}
 //			};
-
-			MainPage = new Layouts ();
+//
+//			MainPage = new Layouts ();
+			MainPage = new CircleArea();
 		}
 
 		protected override void OnStart ()

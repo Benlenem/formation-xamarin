@@ -8,9 +8,11 @@
 			<StackLayout
 				Orientation="Vertical">
 				<StackLayout
+					HeightRequest="500"
 					Orientation="Horizontal"
 					BackgroundColor="Red">
 					<Label
+					HeightRequest="200"
 						Text="Hori" />
 					<Label
 						Text="zontal" />
@@ -27,9 +29,10 @@
 					BackgroundColor="Blue"
 					HeightRequest="50">
 					<BoxView
-						HeightRequest="10"
-						WidthRequest="10"
 						BackgroundColor="Fuchsia"
+						RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
+						RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
+						
 						RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
 						RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5}" />
 				</RelativeLayout>
@@ -70,7 +73,7 @@
 						Grid.Row="0"
 						Grid.Column="2" />
 					<Label
-						Text="1"
+						Text="4"
 						BackgroundColor="Gray"
 						Grid.Row="1"
 						Grid.ColumnSpan="3"
